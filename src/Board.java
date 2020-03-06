@@ -14,15 +14,15 @@ public class Board
         board = new ArrayList<ArrayList<Tile>>();
         //board = new ArrayList[x][y];
         aantal = mines;
-        this.x = y;
-        this.y = x;
+        this.x = x;
+        this.y = y;
     }
     public void initialiseBoard(int A , int B)
     {
-        for( int i = 0 ; i<x ; i++)
+        for( int i = 0 ; i<y ; i++)
         {
             board.add(new ArrayList<Tile>());
-            for( int j = 0 ; j<y ; j++)
+            for( int j = 0 ; j<x; j++)
             {
                 board.get(i).add(new Tile(0));
             }
@@ -33,13 +33,13 @@ public class Board
         {
             coo.add(i);
         }
-        coo.remove(y*B+A);
+        coo.remove(x*B+A);
         Random rand = new Random();
         for (int i = 0; i < aantal; i++)
         {
                 int random = rand.nextInt(coo.size());
-                int randomY = random%y;
-                int randomX = random/y;
+                int randomX = random%x;
+                int randomY = random/x;
 
 
                 board.get(randomX).get(randomY).setValue(-1);
@@ -62,9 +62,9 @@ public class Board
     }
 
     public void printBoard(){
-        for( int i = 0 ; i<x ; i++) {
+        for( int i = 0 ; i<y ; i++) {
             String printValue = "";
-            for (int j = 0; j < y; j++) {
+            for (int j = 0; j < x; j++) {
                 if (board.get(i).get(j).getValue() == -1) {
                     printValue += " " + board.get(i).get(j).getValue();
                 } else {
