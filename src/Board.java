@@ -5,24 +5,22 @@ import java.util.Random;
 public class Board
 {
     ArrayList<ArrayList<Tile>> board;
-    //private ArrayList<Tile>[][] board;
     private int aantal;
     private int x;
     private int y;
 
     public Board(int x, int y, int mines) {
         board = new ArrayList<ArrayList<Tile>>();
-        //board = new ArrayList[x][y];
         aantal = mines;
         this.x = x;
         this.y = y;
     }
     public void initialiseBoard(int A , int B)
     {
-        for( int i = 0 ; i<y ; i++)
+        for( int i = 0 ; i < y ; i++)
         {
             board.add(new ArrayList<Tile>());
-            for( int j = 0 ; j<x; j++)
+            for( int j = 0 ; j < x; j++)
             {
                 board.get(i).add(new Tile(0));
             }
@@ -42,7 +40,7 @@ public class Board
                 int randomY = random/x;
 
 
-                board.get(randomX).get(randomY).setValue(-1);
+                board.get(randomY).get(randomX).setValue(-1);
                 coo.remove(random);
                 addNumbers(randomX,randomY);
             }
@@ -54,15 +52,15 @@ public class Board
         for (int i = -1; i < 2; i++){
             for (int j = -1; j < 2; j++){
                 if (bomX + i >= 0 && bomX + i < x && bomY + j >= 0 && bomY + j < y){
-                    board.get(bomX + i).get(bomY + j).valuePlusOne();
+                    board.get(bomY + j).get(bomX + i).valuePlusOne();
                 }
             }
         }
-        board.get(bomX).get(bomY).setValue(-1);
+        board.get(bomY).get(bomX).setValue(-1);
     }
 
     public void printBoard(){
-        for( int i = 0 ; i<y ; i++) {
+        for( int i = 0 ; i < y ; i++) {
             String printValue = "";
             for (int j = 0; j < x; j++) {
                 if (board.get(i).get(j).getValue() == -1) {
@@ -71,7 +69,7 @@ public class Board
                     printValue += "  " + board.get(i).get(j).getValue();
                 }
             }
-            System.out.println((printValue));
+            System.out.println(printValue);
         }
     }
 }

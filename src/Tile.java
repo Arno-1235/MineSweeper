@@ -1,6 +1,7 @@
 public class Tile
 {
     private int value;
+    
 
     public Tile(int value) {
         this.value = value;
@@ -15,6 +16,8 @@ public class Tile
     }
 
     public void valuePlusOne(){
-        this.value ++;
+        if (value != -1) {
+            this.value++;
+        }
     }
 }
