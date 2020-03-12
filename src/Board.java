@@ -36,8 +36,9 @@ public class Board
         for (int i = 0; i < aantal; i++)
         {
                 int random = rand.nextInt(coo.size());
-                int randomX = random%x;
-                int randomY = random/x;
+                int randomCoo = coo.get(random);
+                int randomX = randomCoo%x;
+                int randomY = randomCoo/x;
 
 
                 board.get(randomY).get(randomX).setValue(-1);
@@ -56,7 +57,7 @@ public class Board
                 }
             }
         }
-        board.get(bomY).get(bomX).setValue(-1);
+        //board.get(bomY).get(bomX).setValue(-1);
     }
 
     public void printBoard(){
