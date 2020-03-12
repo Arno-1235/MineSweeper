@@ -65,7 +65,8 @@ public class Board
             String printValue = "";
             for (int j = 0; j < x; j++) {
                 if (board.get(i).get(j).getValue() == -1) {
-                    printValue += " " + board.get(i).get(j).getValue();
+                    //printValue += " " + board.get(i).get(j).getValue();
+                    printValue += "  B";
                 } else {
                     printValue += "  " + board.get(i).get(j).getValue();
                 }
