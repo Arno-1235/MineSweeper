@@ -1,10 +1,11 @@
 public class Tile
 {
     private int value;
-    
+    private boolean flag;
 
     public Tile(int value) {
         this.value = value;
+        flag = false;
     }
 
     public int getValue() {
@@ -13,6 +14,14 @@ public class Tile
 
     public void setValue(int value) {
         this.value = value;
+    }
+
+    public boolean isFlag() {
+        return flag;
+    }
+
+    public void setFlag() {
+        this.flag = !this.flag;
     }
 
     public void valuePlusOne(){

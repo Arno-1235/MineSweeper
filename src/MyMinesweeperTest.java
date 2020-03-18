@@ -1,9 +1,8 @@
-package model;
-
 import gameinterface.Location;
 import org.junit.Before;
-import org.testng.annotations.AfterTest;
-import src.MyMinesweeper;
+import org.junit.Test;
+//import org.AfterTest;
+
 
 import java.util.ArrayList;
 
