@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="405ea57b-b127-4518-b279-4b3653537dd5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/out/production/MineSweeper/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MineSweeper/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1Yi6mzS13yCGGEwetwBblFdj7AZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="MineSweeper" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="405ea57b-b127-4518-b279-4b3653537dd5" name="Default Changelist" comment="" />
+      <created>1583413231018</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583413231018</updated>
+      <workItem from="1583413266587" duration="3265000" />
+      <workItem from="1583417850062" duration="1939000" />
+      <workItem from="1583492637695" duration="575000" />
+      <workItem from="1584011727921" duration="603000" />
+      <workItem from="1584016492341" duration="958000" />
+      <workItem from="1584018548317" duration="2268000" />
+    </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1584020279112</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584020279112</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584017113734">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="223" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1584017113734" />
+    <state x="446" y="38" key="#com.intellij.ide.util.MemberChooser" timestamp="1583416349558">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="446" y="38" key="#com.intellij.ide.util.MemberChooser/0.0.1280.689@0.0.1280.689" timestamp="1583416349558" />
+    <state x="363" y="15" key="CommitChangelistDialog2" timestamp="1584020277432">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="363" y="15" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1584020277432" />
+    <state x="147" y="63" key="DiffContextDialog" timestamp="1584020246680">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="147" y="63" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1584020246680" />
+    <state x="505" y="125" key="FileChooserDialogImpl" timestamp="1584019965980">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="421" y="103" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1583417404114" />
+    <state x="505" y="125" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1584019965980" />
+    <state width="1493" height="338" key="GridCell.Tab.0.bottom" timestamp="1584024146907">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1237" height="166" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1583493212450" />
+    <state width="1493" height="338" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1584024146907" />
+    <state width="1493" height="338" key="GridCell.Tab.0.center" timestamp="1584024146906">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1237" height="166" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1583493212450" />
+    <state width="1493" height="338" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1584024146906" />
+    <state width="1493" height="338" key="GridCell.Tab.0.left" timestamp="1584024146906">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1237" height="166" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1583493212449" />
+    <state width="1493" height="338" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1584024146906" />
+    <state width="1493" height="338" key="GridCell.Tab.0.right" timestamp="1584024146906">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1237" height="166" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1583493212450" />
+    <state width="1493" height="338" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1584024146906" />
+    <state x="279" y="62" key="SettingsEditor" timestamp="1584019782661">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="279" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1584019782661" />
+    <state x="361" y="153" key="Vcs.Push.Dialog.v2" timestamp="1584020303618">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1584020303618" />
+    <state x="303" y="10" width="672" height="678" key="search.everywhere.popup" timestamp="1583416720852">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="303" y="10" width="672" height="678" key="search.everywhere.popup/0.0.1280.689@0.0.1280.689" timestamp="1583416720852" />
+  </component>
+</project>
