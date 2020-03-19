@@ -22,7 +22,7 @@ public class MyMinesweeper {
         if (x * y < aantal) {
             throw new InvalidRangeException("teveel mijnen meegegeven lul");
         }
-        initialiseBoard(0,0);
+        emptyBoard();
     }
 
     public MyMinesweeper(int x, int y) throws InvalidRangeException {
@@ -30,13 +30,17 @@ public class MyMinesweeper {
 
     }
 
-    public void initialiseBoard(int A, int B) {
+    public void emptyBoard(){
         for (int i = 0; i < y; i++) {
             MyMinesweeper.add(new ArrayList<Tile>());
             for (int j = 0; j < x; j++) {
                 MyMinesweeper.get(i).add(new Tile(0));
             }
         }
+    }
+
+    public void initialiseBoard(int A, int B) {
+        //emptyBoard();
 
         ArrayList<Integer> coo = new ArrayList<>();
         for (int i = 0; i < x * y; i++) {
@@ -110,6 +114,9 @@ public class MyMinesweeper {
     {
         if (locatie.getColumn()<0 || locatie.getRow()<0 || locatie.getColumn()>y-1 || locatie.getRow()>x-1){
             return false;
+        }
+        if (counter == 0){
+            initialiseBoard(locatie.getRow(),locatie.getColumn());
         }
         counter++;
         if (MyMinesweeper.get(locatie.getColumn()).get(locatie.getRow()).getValue() == -1)
