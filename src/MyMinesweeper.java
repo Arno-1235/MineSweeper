@@ -22,6 +22,7 @@ public class MyMinesweeper {
         if (x * y < aantal) {
             throw new InvalidRangeException("teveel mijnen meegegeven lul");
         }
+        initialiseBoard(0,0);
     }
 
     public MyMinesweeper(int x, int y) throws InvalidRangeException {
@@ -58,20 +59,25 @@ public class MyMinesweeper {
 
     public int getWidth()
     {
-        return x;
+        return y;
     }
 
     public int getHeight()
     {
-        return y;
+        return x;
     }
 
-    public char getValueAt(MyLocation locatie)
+    public Object getValueAt(MyLocation locatie)
     {
-        if (MyMinesweeper.get(locatie.getColumn()).get(locatie.getRow()).isFlag()){
-            return 'F';
+        if (locatie.getColumn()<0 || locatie.getRow()<0 || locatie.getColumn()>y-1 || locatie.getRow()>x-1)
+        {
+            return null;
         }
-        return 'O';
+        System.out.println(MyMinesweeper.size());
+        if (MyMinesweeper.get(locatie.getColumn()).get(locatie.getRow()).isFlag()) {
+            return "F";
+        }
+        return "O";
     }
 
     public void addNumbers(int bomX, int bomY){
@@ -102,6 +108,9 @@ public class MyMinesweeper {
 
     public boolean checkLocation( MyLocation locatie)
     {
+        if (locatie.getColumn()<0 || locatie.getRow()<0 || locatie.getColumn()>y-1 || locatie.getRow()>x-1){
+            return false;
+        }
         counter++;
         if (MyMinesweeper.get(locatie.getColumn()).get(locatie.getRow()).getValue() == -1)
         {
@@ -109,19 +118,20 @@ public class MyMinesweeper {
             return true;
         }
         return false;
-
     }
 
     public void flagLocation(MyLocation locatie)
     {
-        counter++;
-        boolean flag = MyMinesweeper.get(locatie.getColumn()).get(locatie.getRow()).setFlag();
-        if (flag && MyMinesweeper.get(locatie.getColumn()).get(locatie.getRow()).getValue() == -1)
-        {
-            aantal--;
-        } else if (!flag && MyMinesweeper.get(locatie.getColumn()).get(locatie.getRow()).getValue() == -1)
-        {
-            aantal++;
+        if (locatie.getColumn()<0 || locatie.getRow()<0 || locatie.getColumn()>y-1 || locatie.getRow()>x-1){
+
+        } else {
+            //counter++;
+            boolean flag = MyMinesweeper.get(locatie.getColumn()).get(locatie.getRow()).setFlag();
+            if (flag && MyMinesweeper.get(locatie.getColumn()).get(locatie.getRow()).getValue() == -1) {
+                aantal--;
+            } else if (!flag && MyMinesweeper.get(locatie.getColumn()).get(locatie.getRow()).getValue() == -1) {
+                aantal++;
+            }
         }
     }
 

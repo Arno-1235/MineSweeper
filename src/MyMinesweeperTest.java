@@ -39,13 +39,13 @@ public class MyMinesweeperTest {
 
     @Test
     public void getWidth() throws InvalidRangeException {
-        MyMinesweeper game = new MyMinesweeper(6,4);
+        MyMinesweeper game = new MyMinesweeper(6,4,0);
         assertEquals(4,game.getWidth());
     }
 
     @Test
     public void getHeight() throws InvalidRangeException {
-        MyMinesweeper game = new MyMinesweeper(6,4);
+        MyMinesweeper game = new MyMinesweeper(6,4,0);
         assertEquals(6,game.getHeight());
     }
 
