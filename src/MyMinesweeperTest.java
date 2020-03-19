@@ -3,10 +3,11 @@ import org.junit.Before;
 import org.junit.Test;
 //import org.AfterTest;
 
-
 import java.util.ArrayList;
 
 import static org.junit.Assert.*;
+
+import model.MyLocation;
 
 public class MyMinesweeperTest {
 

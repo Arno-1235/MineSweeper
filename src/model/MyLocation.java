@@ -1,3 +1,5 @@
+package model;
+
 import gameinterface.Location;
 
 public class MyLocation implements Location {

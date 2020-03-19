@@ -2,12 +2,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import model.MyLocation;
+
 public class MyMinesweeper {
     ArrayList<ArrayList<Tile>> MyMinesweeper;
     private int aantal;
     private int x;
     private int y;
     private int counter;
+    private boolean lost;
 
     public MyMinesweeper(int x, int y, int mines) throws InvalidRangeException {
         MyMinesweeper = new ArrayList<ArrayList<Tile>>();
@@ -15,6 +18,7 @@ public class MyMinesweeper {
         this.x = x;
         this.y = y;
         counter = 0;
+        lost = false;
         if (x * y < aantal) {
             throw new InvalidRangeException("teveel mijnen meegegeven lul");
         }
@@ -101,6 +105,7 @@ public class MyMinesweeper {
         counter++;
         if (MyMinesweeper.get(locatie.getColumn()).get(locatie.getRow()).getValue() == -1)
         {
+            lost = true;
             return true;
         }
         return false;
@@ -110,15 +115,28 @@ public class MyMinesweeper {
     public void flagLocation(MyLocation locatie)
     {
         counter++;
-        MyMinesweeper.get(locatie.getColumn()).get(locatie.getRow()).setFlag();
-        if (checkLocation(locatie))
+        boolean flag = MyMinesweeper.get(locatie.getColumn()).get(locatie.getRow()).setFlag();
+        if (flag && MyMinesweeper.get(locatie.getColumn()).get(locatie.getRow()).getValue() == -1)
         {
             aantal--;
+        } else if (!flag && MyMinesweeper.get(locatie.getColumn()).get(locatie.getRow()).getValue() == -1)
+        {
+            aantal++;
         }
+    }
+
+    public int getNrOfMinesLeft()
+    {
+        return aantal;
     }
 
     public int getNrOfActions()
     {
         return counter;
+    }
+
+    public boolean getLost()
+    {
+        return lost;
     }
 }

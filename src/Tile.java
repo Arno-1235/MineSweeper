@@ -20,8 +20,9 @@ public class Tile
         return flag;
     }
 
-    public void setFlag() {
+    public boolean setFlag() {
         this.flag = !this.flag;
+        return this.flag;
     }
 
     public void valuePlusOne(){
