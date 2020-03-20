@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-
 import model.MyLocation;
 
 public class MyMinesweeper {
@@ -13,6 +12,10 @@ public class MyMinesweeper {
     private boolean lost;
 
     public MyMinesweeper(int x, int y, int mines) throws InvalidRangeException {
+        if (x <= 0 || y <= 0 )
+        {
+            throw new InvalidRangeException("veld klopt nie lul");
+        }
         MyMinesweeper = new ArrayList<ArrayList<Tile>>();
         aantal = mines;
         this.x = x;
@@ -26,8 +29,17 @@ public class MyMinesweeper {
     }
 
     public MyMinesweeper(int x, int y) throws InvalidRangeException {
-        throw new InvalidRangeException("geen mijnen meegegeven lul");
-
+        if (x <= 0 || y <= 0 )
+        {
+            throw new InvalidRangeException("veld klopt nie lul");
+        }
+        MyMinesweeper = new ArrayList<ArrayList<Tile>>();
+        aantal = 0;
+        this.x = x;
+        this.y = y;
+        counter = 0;
+        lost = false;
+        emptyBoard();
     }
 
     public void emptyBoard(){
