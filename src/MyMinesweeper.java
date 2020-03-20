@@ -89,7 +89,7 @@ public class MyMinesweeper {
         {
             return null;
         }
-        System.out.println(MyMinesweeper.size());
+
         if (MyMinesweeper.get(locatie.getColumn()).get(locatie.getRow()).isFlag()) {
             return "F";
         }
