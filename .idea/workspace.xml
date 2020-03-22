@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="405ea57b-b127-4518-b279-4b3653537dd5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MineSweeper/MyMinesweeper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MineSweeper/MyMinesweeper.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +41,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunManager" selected="JUnit.MyMinesweeperTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -92,13 +91,22 @@
       <option name="project" value="LOCAL" />
       <updated>1584020279112</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init">
+      <created>1584698271507</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584698271507</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="init" />
     <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
@@ -119,10 +127,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="618" y="306" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.834@0.0.1536.834" timestamp="1584610823826" />
-    <state x="363" y="15" key="CommitChangelistDialog2" timestamp="1584020277432">
+    <state x="363" y="15" key="CommitChangelistDialog2" timestamp="1584698270669">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="363" y="15" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1584020277432" />
+    <state x="363" y="15" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1584698270669" />
     <state x="147" y="63" key="DiffContextDialog" timestamp="1584020246680">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -152,10 +160,10 @@
     </state>
     <state width="1237" height="166" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1583493212450" />
     <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1584697906784" />
-    <state x="74" y="42" key="SettingsEditor" timestamp="1584698237482">
+    <state x="74" y="42" key="SettingsEditor" timestamp="1584698320682">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="74" y="42" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1584698237482" />
+    <state x="74" y="42" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1584698320682" />
     <state x="361" y="153" key="Vcs.Push.Dialog.v2" timestamp="1584698165892">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
