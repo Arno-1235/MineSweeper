@@ -1,2 +1,3 @@
 # MineSweeper
-Mine sweeper (Software development)
+
+Mine sweeper (Industrieel Ingenieur: Software development)
